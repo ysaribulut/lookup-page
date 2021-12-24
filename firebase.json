@@ -1,0 +1,33 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "emulators": {
+    "auth": {
+      "port": 9097
+    },
+    "functions": {
+      "port": 5007
+    },
+    "firestore": {
+      "port": 8087
+    },
+    "database": {
+      "port": 9007
+    },
+    "storage": {
+      "port": 9197
+    },
+    "ui": {
+      "enabled": true
+    }
+  },
+  "remoteconfig": {}
+}
