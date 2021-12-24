@@ -1,15 +1,16 @@
 import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore/lite';
+import { getFirestore, connectFirestoreEmulator } from 'firebase/firestore/lite';
 
 const app = initializeApp({
-    apiKey: "AIzaSyA3OVmp8ofStdUlSCr-G9_DHiGvf4raOXU",
-    authDomain: "lookuppageupwork.firebaseapp.com",
-    projectId: "lookuppageupwork",
-    storageBucket: "lookuppageupwork.appspot.com",
-    messagingSenderId: "881044804719",
-    appId: "1:881044804719:web:669fe150bd985177e6299a"
-});
+    apiKey: "AIzaSyDAj8lcCCkmxrIKcDJ3_jD1fhzoJXhnnp8",
+    authDomain: "lookup-page.firebaseapp.com",
+    projectId: "lookup-page",
+    storageBucket: "lookup-page.appspot.com",
+    messagingSenderId: "901101214656",
+    appId: "1:901101214656:web:5da151bcac4c0760124625"
+  });
 const db = getFirestore(app);
+connectFirestoreEmulator(db, 'localhost', 8087);
 
 export {
     app,
